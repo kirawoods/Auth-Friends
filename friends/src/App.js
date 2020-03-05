@@ -8,8 +8,11 @@ function App() {
     <Router>
       <div className="App">
         <div className="Navigation">
-          <Login />
+          <Link to="/login">Login</Link>
         </div>
+        <Switch>
+          <Route path="/login" component={Login} />
+        </Switch>
       </div>
     </Router>
   );
